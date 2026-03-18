@@ -1,87 +1,27 @@
-# Note to RED
-![downloads](https://img.shields.io/badge/dynamic/json?color=brightgreen&label=downloads&query=%24%5B%22note-to-red%22%5D.downloads&url=https%3A%2F%2Fraw.githubusercontent.com%2Fobsidianmd%2Fobsidian-releases%2Fmaster%2Fcommunity-plugin-stats.json&style=flat) ![version](https://img.shields.io/github/v/tag/Yeban8090/note-to-red?color=blue&label=version&style=flat) ![license](https://img.shields.io/badge/license-MIT-green) [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-支持作者-yellow)](#支持作者)
+# Banpie RedNote (小红书图文卡片生成器)
 
-> 一键将 Obsidian 笔记转换为小红书图片的插件。
+这是一个基于 Note to RED 源码修改并增强的 Obsidian 插件，可以将 Obsidian 中的 Markdown 笔记一键转换为小红书风格的精美图文卡片。
 
-## 功能演示
-<!-- 插图展示 -->
-<p align="center">
-  <img src="src/assets/introduce/p1.png" alt="功能演示1" width="100%" style="margin:8px;">
-  <img src="src/assets/introduce/p2.png" alt="功能演示2" width="100%" style="margin:8px;">
-  <img src="src/assets/introduce/p3.png" alt="功能演示3" width="100%" style="margin:8px;">
-</p>
+## 主要功能
 
-## 功能特点
-- 📝 可设置使用一级或二级标题分割内容，每个标题自动生成一张配图
-- 🎨 提供多种精美模板，支持自定义字体和字号
-- 🎯 支持自定义主题，可调整颜色、字体、间距等样式
-- 👤 可自定义用户头像、昵称和页脚文案
-- 🔄 实时预览编辑效果
-- 📥 支持单页导出和批量导出
-- 🔒 锁定功能避免预览刷新打断书写
+- 自动识别 Markdown 中的内容并生成排版精美的卡片。
+- 特别针对半撇风格的内容进行了样式和排版的优化适配。
+- 支持一键导出并保存为图片。
 
-## 使用方法
-1. 核心用法：在设置中选择标题级别(一级#或二级##)，用对应标题分割内容，每个标题生成一张小红书配图
-2. 首图制作：单独调整首节字号至20-24px，使用【下载当前页】导出
-3. 长文优化：内容较多的章节可调小字号至14-16px后单独导出
-4. 批量操作：保持统一字号时，用【导出全部页】批量生成
-5. 模板切换：顶部选择器可切换不同视觉风格
-6. 实时编辑：解锁状态(🔓)下编辑文档即时预览效果
+## 手动安装教程
 
-## 安装方法
-### 从 Obsidian 社区插件安装（推荐）
-1. 打开 Obsidian 设置
-2. 转到第三方插件设置
-3. 关闭安全模式
-4. 点击浏览社区插件
-5. 搜索 "Note to RED"
-6. 点击安装并启用插件
+由于本修改版插件未上架 Obsidian 官方商店，你需要进行手动安装：
 
-### 手动安装
-1. 下载最新版本的 release 文件: https://github.com/Yeban8090/note-to-red/releases
-2. 解压后将文件夹复制到 Obsidian 插件目录：`{vault}/.obsidian/plugins/`
-3. 重启 Obsidian
-4. 在设置中启用插件
+1. 点击本仓库绿色的 `<> Code` 按钮，选择 **Download ZIP** 将本仓库下载到电脑。
+2. 解压下载的 ZIP 文件（通常文件夹会叫 `note-to-red-main`）。
+3. 将解压出来的文件夹重命名为 `banpie-rednote` (非常重要，名字不能错)。
+4. 找到你的 Obsidian 仓库所在位置，进入 `.obsidian/plugins` 目录。
+5. 将重命名的 `banpie-rednote` 文件夹放入 `.obsidian/plugins` 目录中。
+   > 最终路径应该是: `你的仓库目录/.obsidian/plugins/banpie-rednote/main.js` 等。
+6. 重启 Obsidian。
+7. 进入设置 `Settings` -> `第三方插件 (Community plugins)`，确保**关闭安全模式 (Safe mode)**。
+8. 在列表中找到 **Banpie RedNote** 并开启，即可使用！
 
-## 使用技巧
-- 在设置中选择适合的标题级别(一级#或二级##)来分割不同的图片内容
-- 一级标题适合大章节分割，二级标题适合小章节分割
-- 调整字号大小以适应不同长度的内容
-- 可以自定义头像和用户信息
-- 支持实时预览和编辑
-- 提供多种模板以适应不同场景
-- 可以创建和编辑自定义主题，精确控制样式效果
-  - 支持调整文字颜色、大小、间距
-  - 可自定义背景、页眉、页脚样式
-  - 提供多个预设主题作为参考
+## 声明
 
-## 支持的语言
-插件界面目前支持：
-- 简体中文
-
-## 支持作者
-如果这个插件对你有所帮助，可以考虑请作者喝杯咖啡 ☕：
-
-<div align="center">
-  <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-    <div style="text-align: center; margin: 1px;">
-      <strong>微信支付</strong><br/>
-      <img src="src/assets/donate/wechat_pay.png" alt="微信支付" width="180px" style="margin-top: 10px;">
-    </div>
-    <div style="text-align: center; margin: 1px;">
-      <strong>支付宝</strong><br/>
-      <img src="src/assets/donate/alipay.png" alt="支付宝" width="180px" style="margin-top: 10px;">
-    </div>
-    <div style="text-align: center; margin: 1px;">
-      <strong>Buy Me a Coffee</strong><br/>
-      <a href="https://ko-fi.com/bruceyeban" style="margin-top: 10px; display: inline-block;">
-        <img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-支持作者-yellow?style=for-the-badge&logo=ko-fi" alt="Buy Me a Coffee" />
-      </a>
-    </div>
-  </div>
-</div>
-
-您的支持是我持续改进这个插件的动力！
-
-## 许可证
-MIT License。查看 [LICENSE](LICENSE) 获取更多信息。
+本项目为二次修改版本，基于原作者的 `note-to-red` 核心，仅供个人或小范围参考使用。
