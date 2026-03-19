@@ -1,7 +1,7 @@
 {
     "id": "banpie-rednote",
     "name": "Banpie RedNote",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "minAppVersion": "0.15.0",
     "description": "半撇风格小红书图文助手 (自动生成封面 + 提取摘要)",
     "author": "Banpie",
